@@ -1,0 +1,263 @@
+baseURL: 'http://localhost:1313/'
+title: PIRAADID
+locale: et_EE
+theme: tailbliss
+DefaultContentLanguage: et
+enableEmoji: true
+enableGitInfo: false
+enableRobotsTXT: true
+canonifyURLs: false
+pagination:
+  pagerSize: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Piraadid
+  authorimage: ../assets/images/logo/piraadid-logo.svg
+  og_image: ../assets/images/lipp/piraadid-lipp.svg
+  moto: "Tehnoloogia on kõigile!"
+  description: "Kaitseme sinu turvalisust ja õigust privaatsusele еst. 2009"
+  disable_theme_toggle: false
+  disable_stay_uptodate: true
+
+  p1:
+    heading: "Meie eesmärk #FightChatControl"
+    image: "images/pages/reject-CSAM.jpg"
+    content:
+      - text: "Meie peamine ülesanne on tagada Eesti arengut kodanike õiguste ja tehnoloogia suunas. Meie arvame, et tehnoloogia ei tohi omandiline olla ja ei tohi massjälgimist teenida. Valitsus, hääletamine ja riigiteenused peavad olema saadavad ja läbipaistvad. Meie eesmärk on ehitada kommertsivaba valitsus, kus ei otsusta raha, vaid inimeste arvamus."
+      - text: "Erakonna Piraadid praegune eesmärk on massjälgimise lõpetamine ning keelamine. Ja ka suurkorporatsioonide vastane aktivism, vaba tarkvara liikumine ja avatud andmed. Kõik see kirjutatud on väljandatud uues mõistes nagu piraadipoliitika."
+      - text: "Tahame ka tagada jalakäiasõbralikku ja hubase linnaruumi. Arendada alternatiivseid autodele liikumisviise, nagu trammid, rongid ja jalgratad. Seega vähendades liiklusõnnetusi."
+
+  p2:
+    heading: "Meie vajame SIND!"
+    image: "images/pages/koosolek-lai.jpg"
+    content:
+      - text: "Kui sina ei tegele poliitikaga, siis poliitika tegeleb sinuga."
+      - text: "Liitu meiega, et: Võidelda suurkorporatsioonide mõjuga kodanikele. Tagada iga ühele õigus privaatsusele internetis. Teha riigi avatuks ja läbipaistvaks. Kujundada jalakäiasõbralikku linnaruumi. Anda rohkem võimu oma häälele ja soovi korral olla võimeline ise teha otsuseid"
+      - text: "Tule ja liitu Piraatidega, et kujundada Eestimaa tulevikku! Valimised Eestis on ebaausad ja hääletada väiksemate erakondade poolt võib tühistada sinu hääle. Selle pärast Piraadid hakkavad tegema koostööd teiste parlamendiväliste erakondadega, et reformeerida demokraatiat Eestis ja asendada valimiskautsjon allkirjade kogumisega."
+      - type: "table"
+        columns:
+          - heading: "Column 1"
+            items:
+              - "Bullet point 1"
+              - "Bullet point 2"
+              - "Bullet point 3"
+          - heading: "Column 2"
+            items:
+              - "Bullet point 4"
+              - "Bullet point 5"
+              - "Bullet point 6"
+  p3:
+    heading: "Meie rühmavestlused ja sotsiaalmeedia"
+    image: "images/pages/piraadid-logo.png"
+    content:
+      - text: "Tule jutustama mõtekaaslastega ja arutama piraatide tuleviku! Mõlemad Matrix ja Signal on omavahel sillaga seotud, seega ei pea muretsema, et olles ühes ruumis jääd puudu millegist, mis toimub teises. Siiski Piraadid soovitavad Matrixi, sest Matrix on hajutatud otskrüptitud võrk, laia klientide valikuga."
+    links:
+      - text: Meie Matrixi ruum
+        url: "https://matrix.to/#/#piraadid:matrix.org"
+      - text: Meie Signali rühm
+        url: "https://signal.group/#CjQKIOMdrqfmIhAGbJceWbWgT4tz_AMhk3vRfEmtg_zW5LEOEhBAGKTU3pxdhHoZHOChI-1R"
+  p4:
+    heading: "UUDISVOOG"
+    content:
+      - text: "Loe piraatide arvamust erinevatel teemadel ja ole kursis sündmustega."
+  p5:
+    heading: "Liitu meie uudiskirjaga!"
+    content:
+      - text: "Liitudes oled kursis tähtsate sündmustega! Lubame, et ei spämmi <3"
+      - text: "UUDISKIRI HETKEL EI TÖÖTA"
+    action: "#"
+    label: "E-posti aadress"
+    placeholder: "Sisesta oma e-post"
+    button: "Liitu uudiskirjaga"
+
+  social_media:
+    codeberg:
+      enabled: true
+      url: 'https://codeberg.org/Piraadid'
+    bluesky:
+      enabled: true
+      url: "https://bsky.app/profile/piraadid.bsky.social"
+    mastodon:
+      enabled: true
+      url: "https://mastodon.ee/@piraadid"
+    telegram:
+      enabled: true
+      url: "https://t.me/piraadid_tg"
+    youtube:
+      enabled: true
+      url: "https://www.youtube.com/@merer%C3%B6%C3%B6vlid"
+    facebook:
+      enabled: true
+      url: 'https://www.facebook.com/profile.php?id=61592532885225'
+    instagram:
+      enabled: true
+      url: 'https://www.instagram.com/piraadid/'
+    twitter:
+      enabled: true
+      url: 'https://x.com/piraadid'
+    github:
+      enabled: false
+      url: ""
+    
+
+menu:
+  main:
+    - identifier: about
+      name: MEIST
+      url: /about/
+      weight: 10
+    - identifier: news
+      name: UUDISED
+      url: /news/
+      weight: 20
+    - identifier: values
+      pre: complexdropdown
+      name: PÕHIMÕTTED
+      weight: 30
+    - identifier: guide
+      pre: complexdropdown
+      name: VABASTA END
+      weight: 40
+    - identifier: membership
+      pre: complexdropdown
+      name: LIIKMELISUS
+      url: /membership/
+      weight: 45
+    - identifier: contact
+      name: KONTAKT
+      url: /contact/
+      weight: 50
+  values:
+    - identifier: manifest
+      name: Manifest
+      pre: scroll
+      post: "Loe meie arvamust"
+      url: /values/manifest/
+      weight: 10
+    - identifier: programm
+      name: Programm
+      pre: checkbox
+      post: "Mida on vaja muuta"
+      url: /values/programm/
+      weight: 20
+  guide:
+    - identifier: vabatarkvara
+      pre: lock-open
+      name: Vaba tarkvara
+      post: "Vähenda suurkorporatsioonide mõju sinule"
+      url: /guide/freesoftware/
+      weight: 10
+    - identifier: services
+      pre: suitcase
+      name: Piraaditeenused
+      post: "Vaata mida meie pakume"
+      url: /guide/services
+      weight: 20
+    - identifier: petitions
+      pre: megaphone
+      name: Avaldused
+      post: "Allkirjasta õiged avaldused"
+      url: /guide/petitions
+      weight: 30
+  membership:
+    - identifier: join
+      pre: arrow-up
+      name: Liitu!!
+      post: "Tule ja võta"
+      url: /membership/join/
+      weight: 10
+    - identifier: fee
+      pre: euro
+      name: Liikmetasu (valikuline)
+      post: "Saa päris piraadiks. Ahoi."
+      url: /membership/fee
+      weight: 20
+    - identifier: vote
+      pre: voting
+      name: Hääleta
+      post: "Sinu hääl loeb"
+      url: /membership/vote
+      weight: 30
+  footer:
+    - identifier: about
+      name: MEIST
+      url: /about/
+      weight: 10
+    - identifier: news
+      name: UUDISED
+      url: /news/
+      weight: 30
+    - identifier: contact
+      name: KONTAKT
+      url: /contact/
+      weight: 50
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.158.0"
+
