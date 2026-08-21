@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: piraadid/koduleht
+
+media_folder: /assets/images
+public_folder: /images
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: /content/posts
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, type: date }
+      - { label: Draft, name: draft, widget: boolean }
+      - { label: Language, name: language, widget: select, options: [et, en]}
+      - { label: Author, name: author, widget: string }
+      - { label: Author img, name: authorimage, widget: image }
+      - { label: Featured Image, name: featured_image, widget: image }
+      - { label: Tags, name: tags, widget: list }
+      - { label: Summary, name: summary, widget: text, maxlength: 175, minlength: 10 }
+      - { label: Body, name: body, widget: richtext }
